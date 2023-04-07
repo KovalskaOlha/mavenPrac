@@ -5,3 +5,10 @@ Feature: test the login functionality
     When user enters valid login and valid password
     And clicks on log in button
     Then user logged in
+
+    Scenario: invalid login
+      Given user navigates to the url
+      When user enters invalid login and valid password
+      And clicks on log in button
+      Then user do not logged in
+      
